@@ -123,7 +123,7 @@ main {
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 12px);
+  top: 100%;
   left: 0;
   min-width: 210px;
   background: #fff;
@@ -134,8 +134,7 @@ main {
   padding: 10px 0;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(8px);
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
   z-index: 20;
 }
 
@@ -143,7 +142,6 @@ main {
 .dropdown:focus-within .dropdown-menu {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
 }
 
 .dropdown-menu li {
